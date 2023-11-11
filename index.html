@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(24, 14, 39);
+            color: white;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(10, 10, 50);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;   
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font: 1.2rem;
+        }
+        nav ul li a:hover{
+            color: rgb(111, 111, 222);
+        }
+        main hr{
+            border: 0;
+            background-color: rgb(52, 77, 100);
+            height: 1.2px;
+            margin: 30px 84px;
+        }
+        .left{
+            font-size: 1.7rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+            align-items: center;
+        }
+        .firstSection > div{
+            width: 40%;
+        }
+        .leftSection{
+            font-size: 2.5rem;
+            margin: 35px 0;
+        }
+        .leftSection .buttons{
+            padding: 30px 0;
+        }
+        .leftSection .btn{
+            padding: 15px;
+            background-color: rgb(85, 72, 171);
+            color: black;
+            border: 2px solid white;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color:#f3f4f8;
+            transition: 0.7s;
+        }
+        .rightSection img{
+            width: 110%;
+
+        }
+        .purple{
+            color: blueviolet;
+        }
+        #element{
+            color: rgb(248, 98, 248);
+        }
+        /* Your existing CSS styles */
+
+    /* Add CSS for mobile responsiveness */
+    @media screen and (max-width: 768px) {
+        body {
+            font-size: 16px; /* Adjust font size for smaller screens */
+        }
+
+        nav {
+            height: 60px; /* Adjust the height of the navigation bar for smaller screens */
+        }
+
+        nav ul li {
+            margin: 0 10px; /* Adjust the margin for list items in the navigation menu */
+        }
+
+        nav ul li a {
+            font-size: 1rem; /* Adjust the font size of navigation links */
+        }
+
+        main hr {
+            margin: 20px 10px; /* Adjust margin for the horizontal rule */
+        }
+
+        .left {
+            font-size: 1.3rem; /* Adjust font size for the "left" div */
+        }
+
+        /* Additional CSS adjustments for mobile screens */
+        .firstSection {
+            flex-direction: column; /* Stack elements vertically on smaller screens */
+        }
+
+        .leftSection {
+            font-size: 1.6rem; /* Adjust font size for the "leftSection" text */
+        }
+
+        .leftSection .buttons {
+            padding: 15px 0; /* Adjust padding for buttons */
+        }
+
+        .leftSection .btn {
+            font-size: 14px; /* Adjust button font size */
+            padding: 10px; /* Adjust button padding */
+        }
+    }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Karuna's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="aboutme.html">About me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="internship.html">Internships</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi,My name is <span class="Purple">Karuna</span>
+                <div>
+                    I am an Artificial Intelligence and Machine Learning Student.
+                </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/13AVLcPAiaXN62qIM4aogng5CArrne_17/view?usp=drivesdk"><button class="btn">Resume</button></a>
+                    <a href="https://www.linkedin.com/in/karuna-nikam-a37371230"><button class="btn">Linkedin</button></a>
+                    <a href="https://github.com/krunanikam"><button class="btn">Github</button></a>
+                    <a href="https://medium.com/@karunanikam379/demystifying-generative-ai-how-artificial-intelligence-creates-text-and-images-5430ca605e39"><button class="btn">Medium</button></a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="https://jnnce.ac.in/jnndemo/aiml.gif" alt="">
+            </div>
+        </section>
+        <hr>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Python', 'R Programming','SQL','C Programming', 'HTML', 'CSS'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
